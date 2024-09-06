@@ -34,7 +34,6 @@ Route::post('/login',function(Request $request){
  });
 
 Route::middleware("auth:sanctum")->group(function(){
-
     Route::apiResource("pedidos",PedidoController::class);
     Route::apiResource("produtos",ProdutoController::class);
 });
